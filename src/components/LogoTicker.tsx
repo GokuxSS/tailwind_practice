@@ -26,9 +26,9 @@ export const LogoTicker = () => {
         <div className="overflow-hidden mt-9 before:content-[''] after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-20 relative before:left-0 after:right-0 before:top-0 after:bottom-0">
           <div className="flex flex-wrap gap-16 justify-center">
             {
-              images.map((image)=>{
+              images.map((img)=>{
                 return (
-                  <Image src={image.src} alt={image.alt} className="flex-none h-8 w-auto"/>
+                  <Image key={img.alt} src={img.src} alt={img.alt} className="flex-none h-8 w-auto"/>
                 )
               })
             }
